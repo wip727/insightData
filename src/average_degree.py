@@ -35,7 +35,7 @@ def remove_non_ascii(text):
 def extract_hash_tags(str):
     return set(s[1:].lower() for s in str.split() if s.startswith('#'))
 
-outfile2 = open('../tweet_output/ft2.txt', 'w')
+outfile2 = open('./tweet_output/ft2.txt', 'w')
 Hashtagdegree = {} # Save the degree of the hashtags
 Hashtagdegree = defaultdict(lambda: 0, Hashtagdegree)
 Hashtagreserves = {} # Hashtag dicts with timestamp as keys 
@@ -43,7 +43,7 @@ timeseries = []
 Avgdegree = 0
 time_range = 60
 
-with open('../tweet_input/tweets.txt') as myfile:
+with open('./tweet_input/tweets.txt') as myfile:
     count  = 0
     for line in myfile:
     #for line in reversed(myfile.readlines()): # to use if tweet.txt is in reversed time order 
