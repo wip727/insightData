@@ -27,9 +27,9 @@ def remove_non_ascii(text):
             res = res + i
     return flag, res         
 
-outfile = open('../tweet_output/ft1.txt', 'w')
+outfile = open('./tweet_output/ft1.txt', 'w')
 
-with open('../tweet_input/tweets.txt') as myfile:
+with open('./tweet_input/tweets.txt') as myfile:
     count  = 0
     for line in myfile:
     #for line in reversed(myfile.readlines()): # to use if tweet.txt is in reversed time order 
